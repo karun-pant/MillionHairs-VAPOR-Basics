@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About Me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <h2>Page number: #(page)</h2>
+    <h3>#(name)</h3>
+    <h4>Say Hello: #(number)</h4>
+    <p>
+    Creating APIs in Vapor and building out an iOS app as the front end may be something you’re fairly familiar with,
+    but you can create nearly any type of client to consume your API. In this tutorial,
+    you’ll create a website-based client against your Vapor API. 
+    You’ll use Leaf, Vapor’s templating language, to create dynamic websites in Vapor applications.
+    </p>
+    <form action="/name" method="post">
+        Name: <input type="text" name="name" value="">
+        <button type="submit"> Post Name </button>
+    </form>
+    #extend("footer")
+    </body>
+</html>
